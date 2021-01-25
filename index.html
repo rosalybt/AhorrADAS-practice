@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>AhorrADAS</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar is-spaced is-primary">
+            <div class="navbar-logo ml">
+                <h1 class="title is-1">
+                    <a href="" class="has-text-white-bis">
+                        <i class="fas fa-wallet mr-2"></i>
+                        AhorrADAS
+                    </a>
+                </h1>
+            </div>
+
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+
+                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span> Balance </span>
+                    </a>
+
+                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"><i class="fas fa-tag"></i></span>
+                        <span> Categoria </span>
+                    </a>
+
+                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"> <i class="fas fa-chart-pie"></i></span>
+                        <span> Reportes</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="section  is-centered columns has-background-white-ter">
+
+        <div class="column is-3">
+            <div class="box">
+
+                <header>
+                    <h3 class="title is-3 as-text-weight-large">Balance</h3>
+                </header>
+
+                <section class="section columns">
+                    <div class="column">
+                        <div>Ganancias</div>
+                        <div>Gastos</div>
+                        <div>Total</div>
+                    </div>
+
+                    <div>
+                        <div id="ganancias">$0</div>
+                        <div id="gastos">$0</div>
+                        <div id="Total">$0</div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="box">
+                <header class="columns is-align-items-center">
+                    <div class="column">
+                        <h4 class="title is-4 as-text-weight-bold">Filtros</h4>
+                    </div>
+
+                    <div class="column">
+                        <button class="button has-text-link is-white ">Ocultar
+                            filtros</button>
+                    </div>
+                </header>
+
+                <div class="container">
+
+                    <div class="field">
+                        <label class="label" for="tipo">
+                            <p class="has-text-weight-bold">Tipo</p>
+                            <div class="select is-fullwidth">
+                                <select name="tipo" id="tipo">
+                                    <option value="">Todos</option>
+                                    <option value="gastos">Gasto</option>
+                                    <option value="ganancias">Ganancias</option>
+                                </select>
+                            </div>
+
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="categoria">
+                            <p class="has-text-weight-bold">Categoria</p>
+                            <div class="select is-fullwidth">
+                                <select name="categoria" id="categoria">
+                                    <option value="">Todos</option>
+                                    <option value="comida">Comida</option>
+                                    <option value="servicios">Servicios</option>
+                                    <option value="salidas">Salidas</option>
+                                    <option value="educacion">Educacion</option>
+                                    <option value="transporte">Transporte</option>
+                                    <option value="trabajo">Trabajo</option>
+                                </select>
+                            </div>
+
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="fecha">
+                            <p class="has-text-weight-bold">Desde</p>
+                            <input class="input" type="date" name="fecha" id="fecha">
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="orden">
+                            <p class="has-text-weight-bold">Ordenar</p>
+                            <div class="select is-fullwidth">
+                                <select name="orden" id="orden">
+                                    <option value="mas-reciente">Mas reciente</option>
+                                    <option value="menos-reciente">Menos reciente</option>
+                                    <option value="mayor-monto">Mayor monto</option>
+                                    <option value="menor-monto">Menor monto</option>
+                                    <option value="ascendente">A/Z</option>
+                                    <option value="descendente">Z/A</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-7">
+            <div class="box">
+                <header class="columns is-align-items-center is-justify-content-space-between">
+                    <div class="column">
+                        <h4 class="title is-4 as-text-weight-large">Operaciones</h4>
+                    </div>
+                    <div class="column is-narrow">
+                        <button id="btn-nueva-operacion" class="button is-primary">+ Nueva operacion</button>
+                    </div>
+                </header>
+
+                <div class="is-centered">
+                    <figure class="image is-3by1">
+                        <img src="imagenes/img_money.svg">
+                    </figure>
+                    <div class="is-centered">
+                        <h4 class="subtitle is-4">Sin resultados</h4>
+                        <p>Cambia los filtros o agrega operaciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+</body>
+
+</html>
