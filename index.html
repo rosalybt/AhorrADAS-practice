@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <title>AhorrADAS</title>
+    <title>AhorrADAS | Balance</title>
 </head>
 
 <body>
-
 
     <header>
         <nav class="navbar is-spaced is-primary">
@@ -27,24 +26,30 @@
 
                 <div class="navbar-end">
 
-                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                    <a href="index.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
                         <span class="icon"><i class="fas fa-chart-line"></i></span>
                         <span> Balance </span>
                     </a>
 
-                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                    <a href="categorias.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
                         <span class="icon"><i class="fas fa-tag"></i></span>
                         <span> Categoria </span>
                     </a>
 
-                    <a href="" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                    <a href="reportes.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
                         <span class="icon"> <i class="fas fa-chart-pie"></i></span>
                         <span> Reportes</span>
                     </a>
 
                 </div>
-
+                <button role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
             </div>
+
         </nav>
     </header>
 
@@ -54,20 +59,20 @@
             <div class="box">
 
                 <header>
-                    <h3 class="title is-3 as-text-weight-large">Balance</h3>
+                    <h2 class="title is-2 as-text-weight-large">Balance</h2>
                 </header>
 
-                <section class="section columns">
-                    <div class="column">
+                <section class="section columns is-justify-content-space-around">
+                    <div class="column is-size-5">
                         <div>Ganancias</div>
                         <div>Gastos</div>
                         <div>Total</div>
                     </div>
 
-                    <div>
-                        <div id="ganancias">$0</div>
-                        <div id="gastos">$0</div>
-                        <div id="Total">$0</div>
+                    <div class="column is-narrow is-size-5">
+                        <div><span id="ganancias" class="has-text-primary">$50000</span></div>
+                        <div><span id="gastos" class="has-text-danger">$0</span></div>
+                        <div><span id="total" class="has-text-weight-semibold">$0</span></div>
                     </div>
 
                 </section>
@@ -88,7 +93,7 @@
 
                 <div class="container">
 
-                    <div class="field">
+                    <fieldset class="field">
                         <label class="label" for="tipo">
                             <p class="has-text-weight-bold">Tipo</p>
                             <div class="select is-fullwidth">
@@ -100,9 +105,9 @@
                             </div>
 
                         </label>
-                    </div>
+                    </fieldset>
 
-                    <div class="field">
+                    <fieldset class="field">
                         <label for="categoria">
                             <p class="has-text-weight-bold">Categoria</p>
                             <div class="select is-fullwidth">
@@ -118,16 +123,16 @@
                             </div>
 
                         </label>
-                    </div>
+                    </fieldset>
 
-                    <div class="field">
+                    <fieldset class="field">
                         <label for="fecha">
                             <p class="has-text-weight-bold">Desde</p>
                             <input class="input" type="date" name="fecha" id="fecha">
                         </label>
-                    </div>
+                    </fieldset>
 
-                    <div class="field">
+                    <fieldset class="field">
                         <label for="orden">
                             <p class="has-text-weight-bold">Ordenar</p>
                             <div class="select is-fullwidth">
@@ -141,7 +146,7 @@
                                 </select>
                             </div>
                         </label>
-                    </div>
+                    </fieldset>
 
                 </div>
             </div>
@@ -154,25 +159,26 @@
                         <h4 class="title is-4 as-text-weight-large">Operaciones</h4>
                     </div>
                     <div class="column is-narrow">
-                        <button id="btn-nueva-operacion" class="button is-primary">+ Nueva operacion</button>
+                        <button id="btn-nueva-operacion" class="button is-primary has-text-weight-semibold">+ Nueva
+                            operacion</button>
                     </div>
                 </header>
 
-                <div class="is-centered">
+                <div class="container">
                     <figure class="image is-3by1">
-                        <img src="imagenes/img_money.svg">
+                        <img src="imagenes/img_money.svg" alt="wallet">
                     </figure>
-                    <div class="is-centered">
-                        <h4 class="subtitle is-4">Sin resultados</h4>
-                        <p>Cambia los filtros o agrega operaciones</p>
+                    <div class="mb-5 mt-5">
+                        <h4 class="title is-4 has-text-centered">Sin resultados</h4>
+                        <p class="has-text-centered">Cambia los filtros o agrega operaciones</p>
                     </div>
+                    <div class=""></div>
                 </div>
             </div>
         </div>
 
 
     </main>
-
 
 
 </body>

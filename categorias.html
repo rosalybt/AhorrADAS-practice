@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>AhorrADAS | Categoria</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-spaced is-primary">
+            <div class="navbar-logo ml">
+                <h1 class="title is-1">
+                    <a href="" class="has-text-white-bis">
+                        <i class="fas fa-wallet mr-2"></i>
+                        AhorrADAS
+                    </a>
+                </h1>
+            </div>
+
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+
+                    <a href="index.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span> Balance </span>
+                    </a>
+
+                    <a href="categorias.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"><i class="fas fa-tag"></i></span>
+                        <span> Categoria </span>
+                    </a>
+
+                    <a href="reportes.html" class="navbar-item  has-text-white-bis has-text-weight-medium">
+                        <span class="icon"> <i class="fas fa-chart-pie"></i></span>
+                        <span> Reportes</span>
+                    </a>
+
+                </div>
+                <button role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="is-centered columns has-background-white-ter pb-5 pt-5">
+        <div class="column is-three-fifths">
+
+            <section class="box">
+                <header class="mb-5">
+                    <h2 class="title is-size-2 has-text-weight-bold ">Categoria</h2>
+                </header>
+
+                <div id="Ingreso-datos" class="columns is-vcentered is-align-items-flex-end">
+                    <label for=" nombre-categoria" class="column">
+                        <h4 class="title is-size-4 m-0">Nombre</h4>
+                        <input class="input is-align-content-end" type="text" name="" id="nombre-categoria">
+                    </label>
+
+                    <div class="column is-narrow">
+                        <button class="button is-success">Agregar</button>
+                    </div>
+
+                </div>
+
+                <section class="contaniner-categories mb-5 mt-5">
+                    <div class="categoria columns is-align-items-center">
+                        <div class="etiqueta-categoria column">
+                            <span class="tag is-primary is-light is-size-6">comida</span>
+                        </div>
+
+                        <div class="acciones is-narrow column">
+                            <button class="button is-white ">Eliminar</button>
+                            <button class="button is-white">Editar</button>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>
